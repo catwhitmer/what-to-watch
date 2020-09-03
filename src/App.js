@@ -29,6 +29,8 @@ class App extends React.Component {
   
   render() {
     const { isLoaded, results} = this.state
+    console.log(isLoaded)
+    console.log(results)
     return (
       <div className="App">
         <h1>What To Watch</h1>
