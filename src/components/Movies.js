@@ -1,15 +1,22 @@
 import React from 'react'
 
-const Movies = (props) => {
-    console.log(props.results)
+const APIURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=ff0c237eec536bb28173dfdf3bf21a40`
 
-    return (
-        <div>
-            <h2> Movies </h2>
-                {props.results.map(result => 
-                    <li> {result.title} - {result.backdrop_path} - {result.release_date} </li>)}
-        </div>
-    )
+class Movies extends React.Component{
+   
+   state = {
+       results: {}
+   }
+   
+   render() {
+   
+        return (
+            <div>
+                <h2> Movies </h2>   
+            </div>
+        )
+   }
+
 }
 
 export default Movies
