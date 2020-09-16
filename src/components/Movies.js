@@ -8,6 +8,18 @@ class Movies extends React.Component{
        results: {}
    }
    
+    componentDidMount() {
+        fetch(APIURL)
+        .then (resp => resp.json())
+        .then (
+            (data) => {
+            this.setState({
+                results: data.results
+            })
+            }
+        )
+    }
+
    render() {
    
         return (
