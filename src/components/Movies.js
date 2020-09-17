@@ -6,7 +6,8 @@ class Movies extends React.Component{
    constructor(props) {
     super(props);
     this.state = {
-       results: []
+       results: [],
+       movies: []
     }
    }
    
@@ -21,13 +22,15 @@ class Movies extends React.Component{
         )
     }
 
+ 
+
    render() {
-       const { results} = this.state
+       const { results } = this.state
         return (
             <div>
                 <h2> Movies </h2> 
                     {results.map(movie => (
-                        <li> {movie.title} </li>
+                        <li key={movie.id}> {movie.title} </li>
                     ))}
             </div>
         )
