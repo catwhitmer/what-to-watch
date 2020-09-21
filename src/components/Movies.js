@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
 const APIURL = `https://api.themoviedb.org/3/movie/now_playing?api_key=ff0c237eec536bb28173dfdf3bf21a40`
-
+//render movie.poster_path
+//then link to details
 
 function Movies() {
  
